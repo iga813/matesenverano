@@ -1,55 +1,175 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clases de Matemáticas en Verano</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f2f7ff, #e0edff);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #0057b7, #003f8a);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0 0 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        section.hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        section.hero h1 {
+            font-size: 2.8em;
+            color: #004099;
+        }
+        section.hero p {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #333;
+        }
+        section.features {
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            background-color: #fff;
+        }
+        .feature {
+            background: #f9faff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .feature h2 {
+            font-size: 1.5em;
+            color: #0057b7;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 1.1em;
+            color: #444;
+        }
+        .cta {
+            text-align: center;
+            margin: 60px 0;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 18px 35px;
+            background: linear-gradient(to right, #0057b7, #003f8a);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta a:hover {
+            background: linear-gradient(to right, #0048a3, #002e6e);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #002e6e;
+            color: white;
+            font-size: 0.9em;
+        }
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        input[type="tel"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1em;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            padding: 10px;
+            background: #0057b7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #003f8a;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Clases de Matemáticas - Verano 2025</h1>
-        <p>Refuerza tus conocimientos de forma divertida y efectiva</p>
-        <p class="telefono">📞 Contacto: 637 602 467</p>
+        <h1>Clases de Matemáticas en Verano</h1>
+        <p>¡Refuerza, repasa y prepárate para el nuevo curso!</p>
     </header>
 
     <section class="hero">
-        <img src="assets/estudio.jpg" alt="Estudiante estudiando matemáticas">
-        <h2>¡Este verano aprende con nosotros!</h2>
-        <p>Clases personalizadas, juegos didácticos y seguimiento individual.</p>
+        <h1>🌞 Aprende Matemáticas Este Verano</h1>
+        <p>Plan personalizado de 12 semanas con ejercicios, juegos y clases adaptadas a cada nivel.</p>
     </section>
 
-    <section class="benefits">
-        <div>
-            <img src="assets/fracciones.jpg" alt="Fracciones">
-            <h3>Refuerzo escolar</h3>
-            <p>Trabajamos contenidos clave del curso pasado.</p>
+    <section class="features">
+        <div class="feature">
+            <h2>✅ Reforzamiento Académico</h2>
+            <p>Revisamos los contenidos clave del curso anterior con ejercicios dinámicos y estrategias efectivas.</p>
         </div>
-        <div>
-            <img src="assets/geometria.jpg" alt="Geometría">
-            <h3>Preparación al nuevo curso</h3>
-            <p>Adelantamos contenidos y técnicas de estudio.</p>
+        <div class="feature">
+            <h2>📚 Preparación para el Nuevo Curso</h2>
+            <p>Actividades diseñadas para empezar el próximo curso con seguridad, soltura y confianza en sí mismo.</p>
         </div>
-        <div>
-            <img src="assets/juegos.jpg" alt="Juego matemático">
-            <h3>Aprendizaje divertido</h3>
-            <p>Usamos juegos, retos y actividades prácticas.</p>
+        <div class="feature">
+            <h2>🎲 Aprendizaje Divertido</h2>
+            <p>Incluimos juegos, retos, vídeos y herramientas digitales para mantener la motivación y el interés.</p>
         </div>
     </section>
 
-    <section class="formulario">
-        <h2>Reserva tu plaza</h2>
+    <div class="cta">
+        <a href="#">Reserva tu plaza ahora</a>
+    </div>
+
+    <section class="form-section">
+        <h2>Inscríbete ahora</h2>
         <form action="https://formspree.io/f/xgvkllyr" method="POST">
-            <label for="telefono">Tu número de teléfono sin prefijo:</label>
-            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}">
-            <button type="submit">Inscribirme</button>
+            <label for="telefono">Tu número de teléfono:</label>
+            <input type="tel" name="telefono" required placeholder="Escribe tu número de teléfono">
+            <button type="submit">Enviar</button>
         </form>
-        <p class="privacidad">* Solo almacenamos tu número para contactarte.</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Clases de Matemáticas en Verano. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Clases de Matemáticas en Verano | Contacto: clasesverano@ejemplo.com | Teléfono: 637602467</p>
     </footer>
 </body>
 </html>
+

@@ -1,0 +1,91 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8faff;
+    color: #333;
+}
+
+header {
+    background-color: #0057b7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .telefono {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #dcebff;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.benefits div {
+    background: #f0f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+}
+
+.benefits img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.formulario {
+    background-color: #e8f1ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+form input[type="tel"] {
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 0;
+    width: 240px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0057b7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #004099;
+    color: white;
+}
+
+.privacidad {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
